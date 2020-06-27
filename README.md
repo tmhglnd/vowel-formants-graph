@@ -1,6 +1,8 @@
 # vowel-formants-graph
 
-An exploration of different vowel formant datasets with interactive synthesis in p5. I constructed a combined json file from the various datasetes with in my opinion best sounding formants to give a good representation of the possible vowels. This is all done by ear. This set is named `formants-constructed.json`
+An exploration of different vowel formant datasets with interactive synthesis in p5. I also constructed a combined json file from the various datasets that, in my opinion, have the best sounding formants which give a good representation of the possible vowel sounds. This is all done by ear though, corrections/suggestions are more than welcome! The set is named `formants-constructed.json`. You are welcome to also pull-request your own datasets in the same format as the others and include them in the code!
+
+## please contribute your sets!
 
 ![screenshot](media/screenshot.png)
 
