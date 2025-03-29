@@ -73,9 +73,9 @@ function setup(){
 		boxes[f].changed(displayData);
 	}
 
-	osc1 = new p5.SawOsc();
-	osc2 = new p5.SawOsc();
-	osc3 = new p5.SawOsc();
+	osc1 = new p5.SqrOsc();
+	osc2 = new p5.SqrOsc();
+	osc3 = new p5.SqrOsc();
 	bPass1 = new p5.BandPass();
 	bPass2 = new p5.BandPass();
 	bPass3 = new p5.BandPass();
@@ -86,9 +86,9 @@ function setup(){
 	osc1.connect(bPass1);
 	osc2.connect(bPass2);
 	osc3.connect(bPass3);
-	osc1.freq(80);
-	osc2.freq(80);
-	osc3.freq(80);
+	osc1.freq(87);
+	osc2.freq(87);
+	osc3.freq(87);
 	osc1.amp(0);
 	osc2.amp(0);
 	osc3.amp(0);
