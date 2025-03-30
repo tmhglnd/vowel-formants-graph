@@ -29,6 +29,7 @@ var files = [
 	'formants-7',
 	'formants-8-female',
 	'formants-8-male',
+	'formants-9-male',
 	'formants-constructed'
 ];
 
@@ -113,8 +114,15 @@ function draw(){
 	for (let p in data){
 		if (data[p].hover()){
 			freqs = data[p].getFreqs();
-			bPass3.freq(freqs[2]);
-			bPass3.res(freqs[2] / bandWidth * 2);
+			try {
+				bPass3.freq(freqs[2]);
+				bPass3.res(freqs[2] / bandWidth * 2);
+				bPass3.amp(1);
+			} catch (e) {
+				bPass3.amp(0);
+				freqs[2] = -1;
+				// console.log('No F3 in dataset');
+			}
 		}
 	}
 	
